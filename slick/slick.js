@@ -1516,7 +1516,7 @@
 
         // add class if slideCount < slidesToShow
         // https://github.com/kenwheeler/slick/issues/262
-        if( _.slideCount < _.options.slidesToShow ) {
+        if( _.slideCount <= _.options.slidesToShow ) {
           _.$slider.addClass('slick-no-slide');
         }
         else {
